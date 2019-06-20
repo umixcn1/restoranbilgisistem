@@ -31,7 +31,7 @@ namespace OnlineLokanta.pages
 
             cmd.Parameters.AddWithValue("@tarihSec", Calendar1.SelectedDate);
             cmd.Parameters.AddWithValue("@saatSec", DropDownList1.SelectedValue);
-            cmd.Parameters.AddWithValue("masaSec", RadioButtonList1.SelectedValue);
+            cmd.Parameters.AddWithValue("@masaSec", RadioButtonList1.SelectedValue);
             conn.Open();
             int i = cmd.ExecuteNonQuery();
             if(i==1)
